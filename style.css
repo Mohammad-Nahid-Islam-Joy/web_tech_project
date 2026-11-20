@@ -4,6 +4,8 @@ body{
     margin: 0;
     padding: 20px;
 }
+
+/*Log-In*/
 #mainBox{
     background-color: white;
     width: 450px;
@@ -122,6 +124,143 @@ button{
     text-decoration: none;
     font-weight: bold;
     margin-left: 5px;
+}
+#loginLine {
+    border: none;
+    border-top: 1px solid #eeeeee;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+/*Sign-Up*/
+#signupTable {
+    background-color: white;
+    width: 450px;
+    padding: 20px;
+    margin: 50px auto;
+    border-radius: 12px;
+    box-shadow: 0px 5px 15px lightgray;
+}
+#createTitle {
+    color: #292943;
+    margin-bottom: 3px;
+}
+
+#getStarted {
+    color: #888888;
+    font-size: 13px;
+    margin-top: 5px;
+}
+#roleBox {
+    text-align: left;
+    font-size: 13px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+#selectRole{
+    color:black;
+    font-size:20px;
+}
+
+#roleOptions {
+    display: flex;
+    gap: 10px;
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+
+#roleOptions label {
+    background-color: #f0f1ff;
+    padding: 12px;
+    width: 50%;
+    border-radius: 7px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+#roleOptions input {
+    cursor: pointer;
+}
+#nameLabel {
+    display: block;
+    text-align: left;
+    font-size: 13px;
+    color: #333333;
+    margin-top: 0px;
+    margin-bottom: 5px;
+    
+}
+
+#fullName {
+    width: 100%;
+    padding: 10px;
+    background-color: #f0f1ff;
+    border: none;
+    border-radius: 7px;
+    box-sizing: border-box;
+}
+#emailAddressLabel {
+    display: block;
+    text-align: left;
+    font-size: 13px;
+    color: #333333;
+    margin-bottom: 5px;
+}
+
+#emailAddress {
+    width: 100%;
+    padding: 10px;
+    background-color: #f0f1ff;
+    border: none;
+    border-radius: 7px;
+    box-sizing: border-box;
+}
+#passwordBox {
+    display: flex;
+    gap: 10px;
+    text-align: left;
+}
+
+#passwordBox div {
+    width: 50%;
+}
+
+#passwordLabel,
+#confirmLabel {
+    display: block;
+    font-size: 13px;
+    color: #333333;
+    margin-bottom: 5px;
+}
+
+#newPassword,
+#confirmPassword {
+    width: 100%;
+    padding: 10px;
+    background-color: #f0f1ff;
+    border: none;
+    border-radius: 7px;
+    box-sizing: border-box;
+}
+#terms {
+    cursor: pointer;
+}
+
+#terms + label {
+    font-size: 12px;
+    color: #777777;
+}
+#createAccount {
+    width: 100%;
+    padding: 12px;
+    background-color: #3926ce;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
 }
 #loginLine {
     border: none;
