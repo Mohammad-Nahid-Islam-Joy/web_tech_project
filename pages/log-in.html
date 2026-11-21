@@ -2,48 +2,60 @@
 <html>
 <head>
     <title>EduEnroll - Sign In</title>
+    <link rel="stylesheet" href="../style.css">
 </head>
 <body>
 
     <h3>EduEnroll - Sign In</h3>
 
+    <div id="mainBox">
+
     <center>
-        <h2>🎓EduEnroll</h2>
-        <h2>Welcome Back</h2>
+        <div id="logo">
+            <span id="logoIcon">🎓</span>
+            <span>EduEnroll</span>
+        </div>
+         <h2 id="welcome">Welcome Back</h2>
         <p>Sign in to access your academic dashboard</p>
 
-        <form>
 
+        <form id="loginForm">
+            <div id="role">
             <input type="radio" name="role" checked> Student
             <input type="radio" name="role"> Teacher
             <input type="radio" name="role"> Admin
-
+            </div>
             <br><br>
 
-            <label>Institutional Email</label><br>
-            <input type="email" placeholder="student@edu.com" required>
+            <label id="emailLabel">Institutional Email</label><br>
+            <input type="email" placeholder="student@edu.com" id="email" required>
 
             <br><br>
-
+             
+            <div id="passwordLine">
             <label>Password</label>
             <a href=" ">Forgot Password?</a><br>
-            <input type="password" placeholder="Enter password" required>
+            </div>
+            <input type="password" id="password" placeholder="Enter password" required>
 
             <br><br>
 
+            <div id="remember">
             <input type="checkbox" checked>
             Remember me on this device
+            </div>
 
             <br><br>
 
-            <button type="submit">Sign In→</button>
+            <button type="submit" id="signIn">Sign In→</button>
+            <hr id="loginLine">
+            <br>
 
-            <br><br>
-
-            <p>Don't have an account? <a href=" ">Sign Up</a></p>
+            <p id="signupLine">Don't have an account? <a href="Sign-up.html ">Sign Up</a></p>
 
         </form>
+        
     </center>
-
+    </div>
 </body>
 </html>

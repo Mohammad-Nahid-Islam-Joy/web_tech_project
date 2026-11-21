@@ -3,6 +3,7 @@
 <html>
 <head>
     <title>EduEnroll - Sign Up</title>
+     <link rel="stylesheet" href="../style.css">
 </head>
 <body>
 
@@ -10,13 +11,12 @@
 
     <center>
 
-        <table width="450" cellpadding="10" cellspacing="0">
+        <table id="signupTable" width="450" cellpadding="10" cellspacing="0">
 
             <tr>
                 <td align="center">
-                    <h2>🎓 EduEnroll</h2>
-                    <h2>Create Account</h2>
-                    <p>Get started with EduEnroll</p>
+                    <h2 id="createTitle">Create Account</h2>
+                    <p id="getStarted">Get started with EduEnroll</p>
                 </td>
             </tr>
 
@@ -24,76 +24,71 @@
                 <td>
                     <form>
 
-                        <b>Select Role</b>
-                        <br><br>
-
+                        <div id="roleBox">
+                        <h3 id="selectRole">Select Role</h3>
+                        <div id="roleOptions">
+                        <label>
                         <input type="radio" name="role" checked>
                         Student
-
+                        </label>
+                        <label>
                         <input type="radio" name="role">
                         Teacher
-
-                        <br><br>
-
-                        <b>Full Name</b>
-                        <br>
-                        <input type="text" placeholder="Elena Rostova"
+                        </label>
+                        </div>
+                        </div>
+                        
+                        <label id="nameLabel">
+                        <h3>Full Name</h3>
+                        </label>
+                        <input type="text" id="fullName" placeholder="Elena Rostova"
                         size="50" required>
 
-                        <br><br>
-
-                        <b>Email Address</b>
-                        <br>
-                        <input type="email"
+                        <label id="emailAddressLabel">
+                        <h3>Email Address</h3>
+                        </label>
+                        <input type="email" id="emailAddress"
                         placeholder="elena.rostova@example.com"
                         size="50" required>
 
-                        <br><br>
 
-                        <table width="100%">
-                            <tr>
-                                <td>
-                                    <b>Password</b>
-                                    <br>
-                                    <input type="password"
-                                    placeholder="Password" size="20"
-                                    required>
-                                </td>
+                        <div id="passwordBox">
+                            <div>
+                                <label id="passwordLabel"><h3>Password</h3></label>
+                                 <input type="password" id="newPassword"
+                                 placeholder="Password" required>
+                            </div>
+                            <div>
+                                <label id="confirmLabel"><h3>Confirm Password</h3></label>
+                                <input type="password" id="confirmPassword"
+                                 placeholder="Confirm Password" required>
+                            </div>
+                        </div>
 
-                                <td>
-                                    <b>Confirm Password</b>
-                                    <br>
-                                    <input type="password"
-                                    placeholder="Confirm Password"
-                                    size="20" required>
-                                </td>
-                            </tr>
-                        </table>
+                        
 
+                        
                         <br>
-
-                        <input type="checkbox" required>
-                        I agree to the
-                        <a href=" ">Terms of Service</a>
-                        and
-                        <a href=" ">Privacy Policy</a>
+                        <input type="checkbox" id="terms">
+                        <label for="terms">I agree to the
+                            <a href="#">Terms of Service</a>
+                            and
+                            <a href="#">Privacy Policy</a>
+                        </label>
 
                         <br><br>
 
                         <center>
-                            <button type="submit">
+                            <button id="createAccount">
                                 Create Account →
                             </button>
                         </center>
 
-                        <br><br>
-
-                        <hr>
-
                         <center>
-                            <p>
+                            <hr id="loginLine">
+                            <p id="signupLine">
                                 Already have an account?
-                                <a href=" ">Sign In</a>
+                                <a href="login.html">Sign In</a> 
                             </p>
                         </center>
 
